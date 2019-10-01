@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Posts</h1>
+  <hr>
+  <div class="card" *ngFor="let post of posts">
+    <div class="card-header">Post Id: {{ post.id  }}</div>
+    <div class="card-header">{{ post.title | uppercase }}</div>
+    <div class="card-body mb-3">{{ post.body }}</div>
+  </div>
+
+</div>
